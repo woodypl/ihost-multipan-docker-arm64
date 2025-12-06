@@ -6,7 +6,7 @@ on:
     - cron: '0 0 * * *'
 
 env:
-  UPSTREAM_REPO: ihost-open-source-project/hassio-ihost-silabs-multiprotocol-amd64
+  UPSTREAM_REPO: ihost-open-source-project/hassio-ihost-silabs-multiprotocol-arm64
 
 jobs:
   get_versions:
