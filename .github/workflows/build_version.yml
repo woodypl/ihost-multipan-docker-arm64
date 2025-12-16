@@ -57,9 +57,9 @@ jobs:
           # create an alias for arm64 (TARGETARCH in build arg) from the existing aarch64 image
           # create an alias for arm (TARGETARCH in build arg) from the existing armv7 image
           build-contexts: |
-            ghcr.io/ihost-open-source-project/hassio-ihost-silabs-multiprotocol-arm64:${{ env.BASE_VERSION }}=docker-image://ghcr.io/ihost-open-source-project/hassio-ihost-silabs-multiprotocol-aarch64:${{ env.BASE_VERSION }}
+            ghcr.io/ihost-open-source-project/hassio-ihost-silabs-multiprotocol-aarch64:${{ env.BASE_VERSION }}=docker-image://ghcr.io/ihost-open-source-project/hassio-ihost-silabs-multiprotocol-aarch64:${{ env.BASE_VERSION }}
             ghcr.io/ihost-open-source-project/hassio-ihost-silabs-multiprotocol-arm:${{ env.BASE_VERSION }}=docker-image://ghcr.io/ihost-open-source-project/hassio-ihost-silabs-multiprotocol-armv7:${{ env.BASE_VERSION }}
-          platforms: linux/amd64,linux/arm64,linux/arm/v7
+          platforms: linux/amd64,linux/aarch64,linux/arm/v7
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}

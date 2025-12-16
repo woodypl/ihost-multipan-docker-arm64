@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
 env:
-  UPSTREAM_REPO: ihost-open-source-project/hassio-ihost-silabs-multiprotocol-arm64
-  REPO_URL: "https://ghcr.io/v2/ihost-open-source-project/hassio-ihost-silabs-multiprotocol-arm64/tags/list"
+  UPSTREAM_REPO: ihost-open-source-project/hassio-ihost-silabs-multiprotocol-aarch64
+  REPO_URL: "https://ghcr.io/v2/ihost-open-source-project/hassio-ihost-silabs-multiprotocol-aarch64/tags/list"
 
 jobs:
   provide_versions:

@@ -1,5 +1,5 @@
 ARG BASE_VERSION=1.0.0
-ARG TARGETARCH=amd64
+ARG TARGETARCH=aarch64
 
 FROM ghcr.io/ihost-open-source-project/hassio-ihost-silabs-multiprotocol-${TARGETARCH}:${BASE_VERSION}
 
